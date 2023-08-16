@@ -289,7 +289,7 @@ EOF
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-adbyby-plus=y #adbyby去广告
 CONFIG_PACKAGE_luci-app-webadmin=n #Web管理页面设置
-CONFIG_PACKAGE_luci-app-ddns=n #DDNS服务
+CONFIG_PACKAGE_luci-app-ddns=y #DDNS服务
 CONFIG_DEFAULT_luci-app-vlmcsd=y #KMS激活服务器
 CONFIG_PACKAGE_luci-app-filetransfer=y #系统-文件传输
 CONFIG_PACKAGE_luci-app-autoreboot=n #定时重启
@@ -308,16 +308,16 @@ CONFIG_PACKAGE_luci-app-qbittorrent=n #qBittorrent离线下载
 CONFIG_PACKAGE_luci-app-amule=n #电驴离线下载
 CONFIG_PACKAGE_luci-app-xlnetacc=n #迅雷快鸟
 CONFIG_PACKAGE_luci-app-zerotier=y #zerotier内网穿透
-CONFIG_PACKAGE_luci-app-hd-idle=n #磁盘休眠
-CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
+CONFIG_PACKAGE_luci-app-hd-idle=y #磁盘休眠
+CONFIG_PACKAGE_luci-app-unblockmusic=n #解锁网易云灰色歌曲
 CONFIG_PACKAGE_luci-app-airplay2=n #Apple AirPlay2音频接收服务器
 CONFIG_PACKAGE_luci-app-music-remote-center=n #PCHiFi数字转盘遥控
 CONFIG_PACKAGE_luci-app-usb-printer=n #USB打印机
 CONFIG_PACKAGE_luci-app-sqm=n #SQM智能队列管理
 CONFIG_PACKAGE_luci-app-jd-dailybonus=n #京东签到服务
 CONFIG_PACKAGE_luci-app-uugamebooster=n #UU游戏加速器
-CONFIG_PACKAGE_luci-app-dockerman=n #Docker管理
-CONFIG_PACKAGE_luci-app-ttyd=n #ttyd
+CONFIG_PACKAGE_luci-app-dockerman=y #Docker管理
+CONFIG_PACKAGE_luci-app-ttyd=y #ttyd
 CONFIG_PACKAGE_luci-app-wireguard=n #wireguard端
 #
 # VPN相关插件(禁用):
@@ -325,15 +325,15 @@ CONFIG_PACKAGE_luci-app-wireguard=n #wireguard端
 CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
 CONFIG_PACKAGE_luci-app-pptp-server=n #PPTP VPN 服务器
 CONFIG_PACKAGE_luci-app-ipsec-vpnd=n #ipsec VPN服务
-CONFIG_PACKAGE_luci-app-openvpn-server=n #openvpn服务
-CONFIG_PACKAGE_luci-app-softethervpn=n #SoftEtherVPN服务器
+CONFIG_PACKAGE_luci-app-openvpn-server=y #openvpn服务
+CONFIG_PACKAGE_luci-app-softethervpn=y #SoftEtherVPN服务器
 #
 # 文件共享相关(禁用):
 #
-CONFIG_PACKAGE_luci-app-minidlna=n #miniDLNA服务
+CONFIG_PACKAGE_luci-app-minidlna=y #miniDLNA服务
 CONFIG_PACKAGE_luci-app-vsftpd=n #FTP 服务器
-CONFIG_PACKAGE_luci-app-samba=n #网络共享
-CONFIG_PACKAGE_autosamba=n #网络共享
+CONFIG_PACKAGE_luci-app-samba=y #网络共享
+CONFIG_PACKAGE_autosamba=y #网络共享
 CONFIG_PACKAGE_samba36-server=n #网络共享
 EOF
 
